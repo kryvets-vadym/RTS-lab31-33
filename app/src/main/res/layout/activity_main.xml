@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="@string/factorization"
+        android:textAlignment="center"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/number3.1"
+            android:layout_width="0pt"
+            android:layout_weight="7"
+            android:inputType="numberDecimal"
+            android:autofillHints="Додатнє число">
+        </EditText>
+
+        <Button
+            android:id="@+id/calculate3.1"
+            android:onClick="calculateFactors"
+            android:layout_width="0pt"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="Порахувати" />
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/p3.1"
+            android:layout_width="172dp"
+            android:text="  p:">
+        </TextView>
+        <TextView
+            android:id="@+id/q3.1"
+            android:layout_width="172dp"
+            android:text="q:">
+        </TextView>
+    </TableRow>
+    <TextView
+        android:id="@+id/prime_factors3.1"
+        android:text="Всі прості множники:">
+    </TextView>
+    <TextView
+        android:text="@string/perceptron"
+        android:textAlignment="center">
+    </TextView>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:layout_width="0pt"
+            android:layout_weight="2"
+            android:id="@+id/add_point3.2"
+            android:onClick="addPoint3_2"
+            android:text="Додати точку">
+        </Button>
+        <EditText
+            android:id="@+id/dataset3.2"
+            android:layout_width="0dp"
+            android:text="( , )"
+            android:layout_weight="3">
+        </EditText>
+
+        <EditText
+            android:id="@+id/classes3.2"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text=" ">
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="Кільк. ітерацій:">
+        </TextView>
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/iterations3.2"
+            android:layout_width="0dp"
+            android:layout_weight="2">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:text="Поріг:">
+        </TextView>
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/threshold3.2"
+            android:layout_width="0dp"
+            android:layout_weight="2">
+        </EditText>
+
+        <Button
+            android:id="@+id/calculate3.2"
+            android:onClick="calculatePerceptron"
+            android:text="Порахувати">
+        </Button>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="Ваги:">
+        </TextView>
+        <TextView
+            android:id="@+id/weights3.2">
+        </TextView>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:minLines="2"
+            android:text="Тестування роботи нейромережі на поданих прикладах:">
+        </TextView>
+        <TextView
+            android:id="@+id/results3.2"
+            android:minLines="2">
+        </TextView>
+    </TableRow>
+
+    <TextView
+        android:text="@string/gen_algorithm"
+        android:textAlignment="center">
+    </TextView>
+
+    <TableRow>
+        <EditText
+            android:id="@+id/a1_3.3"
+            android:inputType="numberDecimal"
+            android:autofillHints="a1"
+            android:layout_width="0dp"
+            android:layout_weight="5">
+        </EditText>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="x1 +">
+        </TextView>
+
+        <EditText
+            android:id="@+id/a2_3.3"
+            android:inputType="numberDecimal"
+            android:autofillHints="a2"
+            android:layout_width="0dp"
+            android:layout_weight="5">
+        </EditText>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="x2 +">
+        </TextView>
+
+        <EditText
+            android:id="@+id/a3_3.3"
+            android:inputType="numberDecimal"
+            android:autofillHints="a3"
+            android:layout_width="0dp"
+            android:layout_weight="5">
+        </EditText>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="x3 +">
+        </TextView>
+
+        <EditText
+            android:id="@+id/a4_3.3"
+            android:inputType="numberDecimal"
+            android:autofillHints="a4"
+            android:layout_width="0dp"
+            android:layout_weight="5">
+        </EditText>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:text="x4 =">
+        </TextView>
+
+        <EditText
+            android:id="@+id/y3.3"
+            android:inputType="numberDecimal"
+            android:autofillHints="y"
+            android:layout_width="0dp"
+            android:layout_weight="5">
+        </EditText>
+
+        <Button
+            android:id="@+id/calculate3.3"
+            android:onClick="calculateGenAlgorithm"
+            android:text="Порахувати">
+        </Button>
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/results3.3"
+        android:text="Результати: ">
+    </TextView>
+
+    <TextView
+        android:id="@+id/iterations3.3"
+        android:text="Кількість ітерацій: ">
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/waitBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"/>
+
+</TableLayout>

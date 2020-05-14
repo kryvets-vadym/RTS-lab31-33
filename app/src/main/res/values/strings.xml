@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Real Time Systems</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="factorization">Лабораторна №3.1. Факторизація</string>
+    <string name="perceptron">Лабораторна №3.2. Перцептрон</string>
+    <string name="gen_algorithm">Лабораторна №3.3. Генетичний алгоритм</string>
+</resources>
