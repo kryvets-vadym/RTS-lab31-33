@@ -20,7 +20,7 @@ fun BigInteger.isPrime() : Boolean {
             return false
     return true
 }
-
+//Additional task 3.1
 fun twoFactors(num: BigInteger, elapsedTime: Long, maxTime: Long) : LinkedList<BigInteger> {
     var a : BigInteger = Math.ceil(Math.sqrt(num.toDouble())).toBigDecimal().toBigInteger()
     var b2 : BigInteger = a*a - num;
