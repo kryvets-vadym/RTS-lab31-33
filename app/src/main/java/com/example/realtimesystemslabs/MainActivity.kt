@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         val handler = Handler(mainLooper)
         handler.post(Runnable { waitBar.setVisibility(View.VISIBLE) })
         runOnUiThread { waitBar.setVisibility(View.VISIBLE) }
-        val maxTime = 3_000 + System.currentTimeMillis()
+        val maxTime = 1_000 + System.currentTimeMillis()
         val inputNumber: BigInteger
         try {
             try {
